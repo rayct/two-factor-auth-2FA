@@ -3,4 +3,6 @@
 ## Libraries required
 ## pip install time pytop qrcode
 
+![screenshot](./assets/totp.png)
+
 ## #rayturner.dev
