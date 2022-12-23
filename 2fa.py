@@ -18,7 +18,7 @@ while True:
 # TEST CODE
 # ********************
 # Create the QrCode
-# uri = pyotp.totp.TOTP(key).provisioning_uri(name="RayTurners_2FA_App",
+# uri = pyotp.totp.TOTP(key).provisioning_uri(name="YourName2FA_App",
 #                                            issuer_name="2FA App")
 # print(uri)
 # qrcode.make(uri).save("./assets/totp.png")
