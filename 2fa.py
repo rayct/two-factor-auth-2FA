@@ -9,14 +9,14 @@ uri = pyotp.totp.TOTP(key).provisioning_uri(name="RayTurners_2FA_App",
 
 print(uri)
 
-qrcode.make(uri).save("totp.png")
+qrcode.make(uri).save("./assets/totp.png")
 
 
 
 
 
 
-
+# TEST CODE
 # ********************
 # totp = pyotp.TOTP(key)
 # print(totp.now())
