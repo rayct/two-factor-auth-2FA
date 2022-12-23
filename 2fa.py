@@ -4,12 +4,11 @@ import qrcode
 
 key = "RaymondTurnerMyOtp"
 
-uri = pyotp.totp.TOTP(key).provisioning_uri(name="RayTurners_2FA_App",
-                                           issuer_name="2FA App")
+# Verify Code Function
+totp = pyotp.TOTP(key)
 
-print(uri)
-
-qrcode.make(uri).save("./assets/totp.png")
+while True:
+    print(totp.verify(input("Enter Code:")))
 
 
 
@@ -17,6 +16,14 @@ qrcode.make(uri).save("./assets/totp.png")
 
 
 # TEST CODE
+# ********************
+# Create the QrCode
+# uri = pyotp.totp.TOTP(key).provisioning_uri(name="RayTurners_2FA_App",
+#                                            issuer_name="2FA App")
+# print(uri)
+# qrcode.make(uri).save("./assets/totp.png")
+# ********************
+
 # ********************
 # totp = pyotp.TOTP(key)
 # print(totp.now())
